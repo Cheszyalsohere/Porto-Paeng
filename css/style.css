@@ -383,6 +383,7 @@ main { overflow-x: clip; }
 }
 .project__media--bamboo { background: #e8f3dd; }
 .project__media--cantuka { background: #fff1e4; }
+.project__media--ekmira { background: #f8eedf; }
 .project__media img { width: 78%; height: 78%; object-fit: contain; }
 .project__media img + .project__fallback { display: none; }
 .project__fallback {
@@ -411,10 +412,14 @@ main { overflow-x: clip; }
 }
 .role__logo { width: 52px; height: 52px; object-fit: contain; padding: 4px; border-radius: 50%; background: #fff; box-shadow: 0 0 0 1px var(--line); }
 .role__logo--icon { display: grid; place-items: center; color: #b0348a; }
+.role__logo--blue { color: var(--blue); }
 .role__logo--icon svg { width: 24px; height: 24px; }
 .role h3 { font-family: var(--font-display); font-weight: 800; font-size: 21px; line-height: 1.25; color: var(--ink); }
 .role__org { font-weight: 700; color: var(--blue); margin-bottom: 6px; }
-.role__desc { color: var(--muted); max-width: 62ch; }
+.role__points { display: grid; gap: 6px; max-width: 66ch; color: var(--muted); }
+.role__points li { position: relative; padding-left: 18px; }
+.role__points li::before { content: ""; position: absolute; left: 2px; top: .7em; width: 6px; height: 6px; border-radius: 50%; background: var(--blue); opacity: .55; }
+.role__points strong { color: var(--ink); font-weight: 700; }
 .role__period { font-size: 15px; font-weight: 600; color: var(--ink-2); white-space: nowrap; padding-top: 3px; font-variant-numeric: tabular-nums; }
 
 /* ---------- CTA ---------- */
@@ -443,7 +448,11 @@ main { overflow-x: clip; }
 .footer__inner {
   display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px 40px;
   padding-block: 28px;
-  border-top: 1px solid rgba(20, 23, 43, .1);
+  position: relative;
+}
+.footer__inner::before {
+  content: ""; position: absolute; top: 0; left: var(--gutter); right: var(--gutter);
+  height: 1px; background: rgba(20, 23, 43, .1);
 }
 .footer__name { font-family: var(--font-display); font-weight: 800; font-size: 18px; color: var(--ink); }
 .footer__tag { color: var(--muted); font-size: 14px; }
