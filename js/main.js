@@ -14,7 +14,7 @@
     "nav.experience": "Experience",
     "nav.contact": "Contact Me",
 
-    "hero.eyebrow": "Hi, I'm Juan",
+    "hero.eyebrow": "Hi, I'm Raphael",
     "hero.title1": "Brand & Marketing",
     "hero.title2": "for Local SMEs.",
     "hero.lead": "<strong>M. Rafael Al Ghazali</strong> — a D4 Marketing Management student at Politeknik Negeri Malang who designs <em>research-driven</em> branding and marketing strategies for small businesses (UMKM).",
@@ -23,7 +23,7 @@
     "hero.cta2": "Contact Me",
 
     "about.card.tag": "Profile Card",
-    "about.card.nick": "Goes by Juan",
+    "about.card.nick": "Goes by Raphael",
     "about.card.study": "Study",
     "about.card.campus": "Campus",
     "about.card.focus": "Focus",
