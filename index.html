@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>M. Rafael Al Ghazali — Brand &amp; Marketing Strategist</title>
+  <meta name="description" content="Portofolio M. Rafael Al Ghazali (Juan), mahasiswa D4 Manajemen Pemasaran Politeknik Negeri Malang yang merancang strategi branding dan pemasaran berbasis riset untuk UMKM.">
+  <meta property="og:title" content="M. Rafael Al Ghazali — Brand & Marketing Strategist">
+  <meta property="og:description" content="Strategi branding dan pemasaran berbasis riset untuk UMKM.">
+  <meta name="theme-color" content="#2E5BFF">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="skip">Langsung ke konten</a>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="top">
+    <div class="container nav__inner">
+      <a href="#top" class="brand" aria-label="Beranda">
+        <span class="brand__mark">RA</span>
+        <span class="brand__name">Rafael<span>.</span></span>
+      </a>
+
+      <nav class="nav__links" id="navLinks" aria-label="Navigasi utama">
+        <a href="#about" data-i18n="nav.about">Tentang</a>
+        <a href="#skills" data-i18n="nav.skills">Keahlian</a>
+        <a href="#projects" data-i18n="nav.projects">Proyek</a>
+        <a href="#experience" data-i18n="nav.experience">Pengalaman</a>
+        <a href="#contact" class="btn btn--primary btn--sm nav__cta" data-i18n="nav.contact">Hubungi Saya</a>
+      </nav>
+
+      <div class="nav__tools">
+        <div class="lang" role="group" aria-label="Pilih bahasa">
+          <button type="button" class="lang__btn is-active" data-lang="id" aria-pressed="true">ID</button>
+          <button type="button" class="lang__btn" data-lang="en" aria-pressed="false">EN</button>
+        </div>
+        <button type="button" class="nav__toggle" id="navToggle" aria-label="Buka menu" aria-expanded="false" aria-controls="navLinks">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="blob blob--pink" aria-hidden="true"></div>
+      <div class="blob blob--violet" aria-hidden="true"></div>
+
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <p class="eyebrow reveal" data-i18n="hero.eyebrow">Halo, saya Juan</p>
+          <h1 class="hero__title reveal">
+            <span data-i18n="hero.title1">Brand &amp; Marketing</span>
+            <span class="grad-text" data-i18n="hero.title2">untuk UMKM.</span>
+          </h1>
+          <p class="hero__lead reveal" data-i18n-html="hero.lead">
+            <strong>M. Rafael Al Ghazali</strong> — mahasiswa D4 Manajemen Pemasaran di Politeknik Negeri Malang yang merancang strategi branding dan pemasaran <em>berbasis riset</em> untuk UMKM.
+          </p>
+
+          <div class="hero__actions reveal">
+            <a href="#projects" class="btn btn--primary">
+              <span data-i18n="hero.cta1">Lihat Proyek</span>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <!-- Tampilkan tombol ini (hapus atribut hidden) setelah file CV ada di assets/cv/CV-Rafael.pdf -->
+            <a href="assets/cv/CV-Rafael.pdf" class="btn btn--soft" download hidden>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg>
+              <span data-i18n="hero.cv">Download CV</span>
+            </a>
+            <a href="#contact" class="btn btn--mint" data-i18n="hero.cta2">Hubungi Saya</a>
+          </div>
+
+          <ul class="hero__meta reveal">
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.1-7-11.5A7 7 0 0 1 19 9.5C19 14.9 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+              Malang, Jawa Timur
+            </li>
+            <li class="socials">
+              <a href="mailto:muhammadrafaelalghazali@gmail.com" aria-label="Email">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m4 7 8 6 8-6"/></svg>
+              </a>
+              <a href="https://www.linkedin.com/in/muhammadrafaelalghazali" target="_blank" rel="noopener" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24" aria-hidden="true" class="fill"><path d="M6.94 8.5H3.56V20h3.38V8.5zM5.25 3a1.96 1.96 0 1 0 0 3.92 1.96 1.96 0 0 0 0-3.92zM20.44 13.4c0-3.1-1.65-4.54-3.86-4.54-1.78 0-2.58.98-3.02 1.67V8.5h-3.37c.04.95 0 11.5 0 11.5h3.37v-6.42c0-.34.03-.69.12-.93.27-.69.89-1.4 1.93-1.4 1.36 0 1.9 1.04 1.9 2.56V20h3.38l-.45-6.6z"/></svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="hero__visual reveal" aria-hidden="true">
+          <div class="swirl"></div>
+          <div class="grid-deco"></div>
+          <div class="portrait">
+            <img src="assets/img/paeng.jpg" alt="" onerror="this.remove()">
+            <span class="portrait__fallback">Juan</span>
+          </div>
+          <span class="sphere sphere--pink"></span>
+          <span class="sphere sphere--peach"></span>
+          <span class="sphere sphere--blue"></span>
+          <span class="chip chip--1">Aaker</span>
+          <span class="chip chip--2">Keller · CBBE</span>
+          <span class="chip chip--3">Ansoff Matrix</span>
+          <span class="chip chip--4">BEP &amp; Forecast</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="about section" id="about">
+      <div class="blob blob--peach" aria-hidden="true"></div>
+      <div class="container about__grid">
+        <div class="idcard reveal">
+          <div class="idcard__top">
+            <span class="brand__mark brand__mark--lg">RA</span>
+            <span class="idcard__tag" data-i18n="about.card.tag">Kartu Profil</span>
+          </div>
+          <p class="idcard__name">M. Rafael Al Ghazali</p>
+          <p class="idcard__nick" data-i18n="about.card.nick">Dipanggil Juan</p>
+          <dl class="idcard__list">
+            <div><dt data-i18n="about.card.study">Studi</dt><dd>D4 Manajemen Pemasaran</dd></div>
+            <div><dt data-i18n="about.card.campus">Kampus</dt><dd>Politeknik Negeri Malang</dd></div>
+            <div><dt data-i18n="about.card.focus">Fokus</dt><dd data-i18n="about.card.focusVal">Brand Strategy · Riset Pasar</dd></div>
+            <div><dt data-i18n="about.card.goal">Target</dt><dd>Management Trainee / MDP</dd></div>
+          </dl>
+        </div>
+
+        <div class="about__copy">
+          <h2 class="section__title reveal" data-i18n="about.title">Tentang Saya.</h2>
+          <p class="reveal" data-i18n-html="about.p1">
+            Saya mahasiswa pemasaran yang tertarik pada titik temu antara <strong>strategi brand</strong>, <strong>riset pasar</strong>, dan <strong>kewirausahaan digital</strong>.
+          </p>
+          <p class="reveal" data-i18n-html="about.p2">
+            Saya tidak berhenti di teori kelas. Saya aktif menerapkan framework pemasaran seperti Aaker, Keller, dan Ansoff Matrix pada studi kasus UMKM nyata, mulai dari analisis brand hingga proses legal seperti pendaftaran Hak Kekayaan Intelektual. Saat ini saya sedang mempersiapkan diri untuk jenjang karier <strong>Management Trainee / MDP</strong> di perusahaan besar.
+          </p>
+
+          <ul class="stats reveal">
+            <li><span class="stats__num">3</span><span class="stats__label" data-i18n="about.stat1">UMKM ditangani</span></li>
+            <li><span class="stats__num">4</span><span class="stats__label" data-i18n="about.stat2">Peran organisasi &amp; profesional</span></li>
+            <li><span class="stats__num">1</span><span class="stats__label" data-i18n="about.stat3">Laporan analisis ber-HAKI</span></li>
+          </ul>
+
+          <div class="about__actions reveal">
+            <a href="#projects" class="btn btn--primary btn--sm" data-i18n="about.cta1">Lihat Proyek</a>
+            <a href="#contact" class="btn btn--mint btn--sm" data-i18n="about.cta2">Hubungi Saya</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="skills section" id="skills">
+      <div class="container">
+        <div class="skills__intro">
+          <div class="skills__copy">
+            <p class="eyebrow reveal" data-i18n="skills.eyebrow">Keahlian</p>
+            <h2 class="section__title section__title--xl reveal" data-i18n-html="skills.title">Strategi yang tidak berhenti <span class="grad-text">di atas kertas.</span></h2>
+            <p class="reveal" data-i18n="skills.lead">Setiap strategi saya bangun dari riset dan framework yang jelas, lalu saya uji dengan angka bisnis sebelum dipakai oleh pelaku usaha.</p>
+            <a href="#projects" class="btn btn--primary btn--sm reveal" data-i18n="skills.cta">Lihat penerapannya</a>
+          </div>
+
+          <!-- Jendela aplikasi: Ansoff Matrix interaktif -->
+          <div class="appwin reveal">
+            <div class="appwin__bar">
+              <span></span><span></span><span></span>
+              <p>ansoff-matrix.plan</p>
+            </div>
+            <div class="appwin__body">
+              <div class="ansoff">
+                <span class="ansoff__axis ansoff__axis--x" data-i18n="ansoff.x">Produk → Lama · Baru</span>
+                <span class="ansoff__axis ansoff__axis--y" data-i18n="ansoff.y">Pasar → Lama · Baru</span>
+                <button type="button" class="ansoff__cell is-active" data-q="0">
+                  <b data-i18n="ansoff.q0">Market Penetration</b>
+                </button>
+                <button type="button" class="ansoff__cell" data-q="1">
+                  <b data-i18n="ansoff.q1">Product Development</b>
+                </button>
+                <button type="button" class="ansoff__cell" data-q="2">
+                  <b data-i18n="ansoff.q2">Market Development</b>
+                </button>
+                <button type="button" class="ansoff__cell" data-q="3">
+                  <b data-i18n="ansoff.q3">Diversification</b>
+                </button>
+              </div>
+              <aside class="appwin__side">
+                <p class="appwin__label" data-i18n="ansoff.label">Catatan strategi</p>
+                <p class="appwin__note" id="ansoffNote" aria-live="polite">Perkuat penjualan produk yang ada ke pasar yang sudah dikenal.</p>
+                <div class="appwin__bars" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+              </aside>
+            </div>
+            <div class="appwin__timeline" aria-hidden="true"><span></span></div>
+          </div>
+        </div>
+
+        <ol class="skill-list">
+          <li class="skill reveal">
+            <span class="skill__num">01</span>
+            <h3 data-i18n="skill1.t">Brand Strategy &amp; Analysis</h3>
+            <p data-i18n="skill1.d">Merancang dan menganalisis strategi brand dengan framework Aaker dan Keller, serta menyusun arah ekspansi bisnis dengan Ansoff Matrix.</p>
+            <ul class="tags"><li>Aaker</li><li>Keller CBBE</li><li>Ansoff</li></ul>
+          </li>
+          <li class="skill reveal">
+            <span class="skill__num">02</span>
+            <h3 data-i18n="skill2.t">Market Research</h3>
+            <p data-i18n="skill2.d">Riset pasar menyeluruh untuk memvalidasi konsep bisnis: analisis target pasar, potensi permintaan, dan peluang model bisnis.</p>
+            <ul class="tags"><li data-i18n="tag.target">Target Pasar</li><li data-i18n="tag.demand">Permintaan</li><li data-i18n="tag.bm">Model Bisnis</li></ul>
+          </li>
+          <li class="skill reveal">
+            <span class="skill__num">03</span>
+            <h3 data-i18n="skill3.t">Marketing Planning End-to-End</h3>
+            <p data-i18n="skill3.d">Menyusun rencana pemasaran dari perumusan strategi hingga proyeksi keuangan, menggabungkan sisi kreatif dengan validasi angka bisnis.</p>
+            <ul class="tags"><li>CRM</li><li>IMC</li><li>BEP</li><li>Forecasting</li></ul>
+          </li>
+          <li class="skill reveal">
+            <span class="skill__num">04</span>
+            <h3 data-i18n="skill4.t">Client Advisory</h3>
+            <p data-i18n="skill4.d">Memberi masukan strategi pemasaran langsung kepada pelaku usaha nyata, bukan sekadar simulasi tugas akademik.</p>
+            <ul class="tags"><li>Positioning</li><li data-i18n="tag.promo">Promosi</li></ul>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="projects section" id="projects">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="section__title reveal" data-i18n="projects.title">Proyek Unggulan</h2>
+          <p class="section__aside reveal" data-i18n="projects.aside">Studi kasus UMKM nyata</p>
+        </div>
+
+        <!-- Sang Bamboo -->
+        <article class="project project--featured reveal">
+          <div class="project__media project__media--bamboo">
+            <img src="assets/img/logo-sang-bamboo.png" alt="Logo Sang Bamboo" onerror="this.remove()">
+            <span class="project__fallback">Sang<br>Bamboo</span>
+          </div>
+          <div class="project__body">
+            <div class="project__kicker">
+              <span class="badge badge--hot" data-i18n="p.featured">Proyek Unggulan</span>
+              <span class="kicker" data-i18n="p1.kicker">Branding · Kerajinan Bambu</span>
+            </div>
+            <h3 class="project__title" data-i18n="p1.title">Branding UMKM Sang Bamboo</h3>
+            <p class="project__desc" data-i18n="p1.desc">Analisis brand berbasis framework Aaker dan Keller, dilengkapi strategi ekspansi dengan Ansoff Matrix, untuk merumuskan positioning dan arah pengembangan brand kerajinan bambu yang lebih terstruktur.</p>
+            <dl class="case">
+              <div><dt data-i18n="case.approach">Pendekatan</dt><dd data-i18n="p1.approach">Brand equity (Aaker), CBBE (Keller), dan Ansoff Matrix untuk arah ekspansi.</dd></div>
+              <div><dt data-i18n="case.result">Hasil</dt><dd data-i18n-html="p1.result">Hasil analisis kelompok <strong>diterapkan langsung oleh pihak UMKM</strong>, dan laporannya <strong>didaftarkan HAKI</strong> oleh program studi.</dd></div>
+            </dl>
+            <ul class="tags"><li>Aaker</li><li>Keller</li><li>Ansoff Matrix</li><li>HAKI</li></ul>
+          </div>
+        </article>
+
+        <!-- Cantuka -->
+        <article class="project reveal">
+          <div class="project__media project__media--cantuka">
+            <img src="assets/img/logo-cantuka.png" alt="Logo Cantuka Kreatif" onerror="this.remove()">
+            <span class="project__fallback">Cantuka<br>Kreatif</span>
+          </div>
+          <div class="project__body">
+            <div class="project__kicker">
+              <span class="kicker" data-i18n="p2.kicker">Marketing Plan · Kerajinan Daur Ulang</span>
+            </div>
+            <h3 class="project__title" data-i18n="p2.title">Marketing Plan UMKM Cantuka Kreatif</h3>
+            <p class="project__desc" data-i18n="p2.desc">Rencana pemasaran menyeluruh untuk brand kerajinan ramah lingkungan berbahan daur ulang, dari perumusan strategi hingga validasi angka bisnis.</p>
+            <dl class="case">
+              <div><dt data-i18n="case.approach">Pendekatan</dt><dd data-i18n="p2.approach">Analisis CRM dan Integrated Marketing Communication (IMC).</dd></div>
+              <div><dt data-i18n="case.result">Hasil</dt><dd data-i18n="p2.result">Rencana pemasaran lengkap dengan proyeksi Break Even Point dan forecasting penjualan.</dd></div>
+            </dl>
+            <ul class="tags"><li>CRM</li><li>IMC</li><li>BEP</li><li>Forecasting</li></ul>
+          </div>
+        </article>
+
+        <!-- Riset Pasuruan -->
+        <article class="project reveal">
+          <div class="project__media project__media--research">
+            <svg viewBox="0 0 120 120" aria-hidden="true" class="research-art">
+              <rect x="18" y="62" width="16" height="36" rx="4"/>
+              <rect x="42" y="46" width="16" height="52" rx="4"/>
+              <rect x="66" y="30" width="16" height="68" rx="4"/>
+              <rect x="90" y="16" width="16" height="82" rx="4"/>
+              <path d="M16 54 44 38l24 8 38-30"/>
+            </svg>
+          </div>
+          <div class="project__body">
+            <div class="project__kicker">
+              <span class="kicker" data-i18n="p3.kicker">Riset Pasar · Startup Digital</span>
+            </div>
+            <h3 class="project__title" data-i18n="p3.title">Riset Startup Digitalisasi UMKM Pasuruan</h3>
+            <p class="project__desc" data-i18n="p3.desc">Riset pasar sebagai dasar validasi konsep startup digital yang bertujuan mendigitalisasi UMKM di Kabupaten Pasuruan.</p>
+            <dl class="case">
+              <div><dt data-i18n="case.approach">Pendekatan</dt><dd data-i18n="p3.approach">Analisis target pasar, potensi permintaan, dan peluang model bisnis.</dd></div>
+              <div><dt data-i18n="case.result">Hasil</dt><dd data-i18n="p3.result">Validasi konsep bisnis berbasis data sebelum startup dikembangkan.</dd></div>
+            </dl>
+            <ul class="tags"><li>Market Research</li><li>Business Model</li></ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCE ============ -->
+    <section class="experience section" id="experience">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="section__title reveal" data-i18n="exp.title">Pengalaman</h2>
+          <p class="section__aside reveal" data-i18n="exp.aside">Profesional &amp; organisasi</p>
+        </div>
+
+        <ul class="exp-grid">
+          <li class="exp reveal">
+            <div class="exp__head">
+              <span class="exp__icon exp__icon--blue">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V10l8-6 8 6v10"/><path d="M9 20v-6h6v6"/></svg>
+              </span>
+              <span class="exp__period"><span data-i18n="exp.p1">2025 – Sekarang</span><i class="live" aria-hidden="true"></i></span>
+            </div>
+            <h3>Marketing Advisor</h3>
+            <p class="exp__org">UMKM Yusmida Collections</p>
+            <p data-i18n="exp1.d">Memberi masukan strategi pemasaran langsung kepada pelaku usaha, membantu merumuskan pendekatan promosi dan positioning produk.</p>
+          </li>
+          <li class="exp reveal">
+            <div class="exp__head">
+              <span class="exp__icon exp__icon--pink">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="6" width="18" height="13" rx="3"/><circle cx="12" cy="12.5" r="3.2"/><path d="M8 6l1.5-2h5L16 6"/></svg>
+              </span>
+              <span class="exp__period"><span data-i18n="exp.p2">Jan 2026 – Sekarang</span><i class="live" aria-hidden="true"></i></span>
+            </div>
+            <h3 data-i18n="exp2.t">Pembina Media &amp; Kreatif</h3>
+            <p class="exp__org" data-i18n="exp2.org">Ekstrakurikuler Robotik</p>
+            <p data-i18n="exp2.d">Mengelola media dan konten kreatif kegiatan ekstrakurikuler, menggabungkan sisi teknis robotik dengan komunikasi visual.</p>
+          </li>
+          <li class="exp reveal">
+            <div class="exp__head">
+              <span class="exp__icon exp__icon--violet">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><path d="M16 11a3 3 0 1 0 0-6M21 20c0-2.6-1.7-4.8-4-5.6"/></svg>
+              </span>
+              <span class="exp__period" data-i18n="exp.p3">Apr 2025 – Mar 2026</span>
+            </div>
+            <h3 data-i18n="exp3.t">Staf PSDM</h3>
+            <p class="exp__org">BEM Politeknik Negeri Malang</p>
+            <p data-i18n="exp3.d">Terlibat dalam pengembangan sumber daya mahasiswa di tingkat lembaga eksekutif kampus.</p>
+          </li>
+          <li class="exp reveal">
+            <div class="exp__head">
+              <span class="exp__icon exp__icon--mint">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.4 6.8 19.1l1-5.8L3.5 9.2l5.9-.9z"/></svg>
+              </span>
+              <span class="exp__period" data-i18n="exp.p4">Mar 2025 – Feb 2026</span>
+            </div>
+            <h3 data-i18n="exp4.t">Divisi Minat &amp; Bakat</h3>
+            <p class="exp__org" data-i18n="exp4.org">Himpunan Mahasiswa Administrasi Niaga</p>
+            <p data-i18n="exp4.d">Pengalaman organisasi di tingkat himpunan jurusan, mengembangkan minat dan bakat mahasiswa.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT / CTA ============ -->
+    <section class="cta" id="contact">
+      <div class="blob blob--cta1" aria-hidden="true"></div>
+      <div class="blob blob--cta2" aria-hidden="true"></div>
+      <span class="cta__bubble cta__bubble--l" aria-hidden="true">Brand?</span>
+      <span class="cta__bubble cta__bubble--r" aria-hidden="true">Riset?</span>
+      <div class="container cta__inner">
+        <h2 class="cta__title reveal" data-i18n-html="cta.title">Tertarik berdiskusi atau <span class="grad-text">berkolaborasi?</span></h2>
+        <p class="cta__lead reveal" data-i18n="cta.lead">Terbuka untuk program Management Trainee / MDP, proyek branding UMKM, maupun diskusi seputar pemasaran.</p>
+        <div class="cta__actions reveal">
+          <a href="mailto:muhammadrafaelalghazali@gmail.com" class="btn btn--primary">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m4 7 8 6 8-6"/></svg>
+            <span data-i18n="cta.email">Kirim Email</span>
+          </a>
+          <a href="https://www.linkedin.com/in/muhammadrafaelalghazali" target="_blank" rel="noopener" class="btn btn--soft">
+            <svg viewBox="0 0 24 24" aria-hidden="true" class="fill"><path d="M6.94 8.5H3.56V20h3.38V8.5zM5.25 3a1.96 1.96 0 1 0 0 3.92 1.96 1.96 0 0 0 0-3.92zM20.44 13.4c0-3.1-1.65-4.54-3.86-4.54-1.78 0-2.58.98-3.02 1.67V8.5h-3.37c.04.95 0 11.5 0 11.5h3.37v-6.42c0-.34.03-.69.12-.93.27-.69.89-1.4 1.93-1.4 1.36 0 1.9 1.04 1.9 2.56V20h3.38l-.45-6.6z"/></svg>
+            LinkedIn
+          </a>
+        </div>
+        <button type="button" class="copy-mail reveal" id="copyMail" data-mail="muhammadrafaelalghazali@gmail.com">
+          <span>muhammadrafaelalghazali@gmail.com</span>
+          <em data-i18n="cta.copy">Salin</em>
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© <span id="year">2026</span> M. Rafael Al Ghazali</p>
+      <a href="#top" class="brand__mark brand__mark--light" aria-label="Kembali ke atas">RA</a>
+      <div class="footer__social">
+        <a href="mailto:muhammadrafaelalghazali@gmail.com" aria-label="Email">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m4 7 8 6 8-6"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/muhammadrafaelalghazali" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" aria-hidden="true" class="fill"><path d="M6.94 8.5H3.56V20h3.38V8.5zM5.25 3a1.96 1.96 0 1 0 0 3.92 1.96 1.96 0 0 0 0-3.92zM20.44 13.4c0-3.1-1.65-4.54-3.86-4.54-1.78 0-2.58.98-3.02 1.67V8.5h-3.37c.04.95 0 11.5 0 11.5h3.37v-6.42c0-.34.03-.69.12-.93.27-.69.89-1.4 1.93-1.4 1.36 0 1.9 1.04 1.9 2.56V20h3.38l-.45-6.6z"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
