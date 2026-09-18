@@ -29,3 +29,9 @@ Selama file belum ada, website menampilkan placeholder otomatis.
 ## Deploy
 
 Import repo ini di Vercel sebagai proyek statis. Tidak perlu build command.
+
+## Analytics pengunjung
+
+Website memakai **Vercel Web Analytics** (tanpa cookie). Script-nya sudah terpasang di `index.html` dan hanya aktif di domain Vercel.
+
+Setelah deploy: buka proyek di dashboard Vercel → tab **Analytics** → **Enable**, lalu redeploy sekali. Data pengunjung (jumlah kunjungan, halaman, negara, perangkat, sumber traffic) muncul di tab tersebut.

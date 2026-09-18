@@ -431,5 +431,16 @@
   </dialog>
 
   <script src="js/main.js"></script>
+
+  <!-- Vercel Web Analytics: hanya aktif di domain Vercel, bukan saat dibuka lokal -->
+  <script>
+    window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+    if (!/^(localhost|127\.0\.0\.1)$/.test(location.hostname) && location.protocol !== "file:") {
+      var va = document.createElement("script");
+      va.defer = true;
+      va.src = "/_vercel/insights/script.js";
+      document.head.appendChild(va);
+    }
+  </script>
 </body>
 </html>
