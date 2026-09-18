@@ -101,6 +101,8 @@
     "cta.lead": "Open to Management Trainee / MDP programs, small-business branding projects, and conversations about marketing.",
     "cta.email": "Send an Email",
     "cta.copy": "Copy",
+    "footer.tag": "Brand & marketing for local SMEs · Malang",
+    "footer.top": "Back to top ↑",
   };
 
   const ANSOFF_NOTES = {
