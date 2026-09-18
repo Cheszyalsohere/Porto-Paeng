@@ -286,6 +286,9 @@
     document.querySelectorAll(".js-cv-open").forEach((a) => {
       a.addEventListener("click", (e) => {
         e.preventDefault();
+        // gambar preview baru diunduh saat pertama kali dibuka
+        const img = cvModal.querySelector("img[data-src]");
+        if (img) { img.src = img.dataset.src; img.removeAttribute("data-src"); }
         cvModal.showModal();
         document.body.classList.add("is-locked");
       });
