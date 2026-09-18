@@ -1,8 +1,6 @@
 (() => {
   "use strict";
 
-  document.documentElement.classList.add("js");
-
   /* ---------- i18n ----------
      Teks Bahasa Indonesia ada langsung di HTML dan dibaca saat load.
      Di sini cukup terjemahan Bahasa Inggris. */
@@ -14,75 +12,70 @@
     "nav.experience": "Experience",
     "nav.contact": "Contact Me",
 
-    "hero.eyebrow": "Hi, I'm Raphael",
+    "hero.eyebrow": "Hi, I'm Raphael.",
     "hero.title1": "Brand & Marketing",
     "hero.title2": "for Local SMEs.",
-    "hero.lead": "<strong>M. Rafael Al Ghazali</strong> — a D4 Marketing Management student at Politeknik Negeri Malang who designs <em>research-driven</em> branding and marketing strategies for small businesses (UMKM).",
+    "hero.lead": "<strong>M. Rafael Al Ghazali</strong>, a D4 Marketing Management student at Politeknik Negeri Malang. I design research-driven branding and marketing strategies for small businesses (UMKM), then see them through until the owners put them to use.",
     "hero.cta1": "View Projects",
     "hero.cv": "Download CV",
     "hero.cta2": "Contact Me",
+    "hero.place": "Malang, East Java",
+    "clients.label": "Small businesses I've worked with",
 
-    "about.card.tag": "Profile Card",
-    "about.card.nick": "Goes by Raphael",
+    "about.title": "About Me.",
+    "about.p1": "I'm a marketing student drawn to the intersection of <strong>brand strategy</strong>, <strong>market research</strong>, and <strong>digital entrepreneurship</strong>.",
+    "about.p2": "I apply frameworks like Aaker, Keller, and the Ansoff Matrix directly to small businesses, from brand analysis to registering the analysis report as intellectual property (HAKI). I'm currently preparing for <strong>Management Trainee / MDP</strong> programs at large companies.",
     "about.card.study": "Study",
     "about.card.campus": "Campus",
     "about.card.focus": "Focus",
-    "about.card.focusVal": "Brand Strategy · Market Research",
-    "about.card.goal": "Aiming for",
-    "about.title": "About Me.",
-    "about.p1": "I'm a marketing student drawn to the intersection of <strong>brand strategy</strong>, <strong>market research</strong>, and <strong>digital entrepreneurship</strong>.",
-    "about.p2": "Rather than stopping at classroom theory, I apply marketing frameworks such as Aaker, Keller, and the Ansoff Matrix to real small-business cases, from brand analysis all the way to legal steps like intellectual property registration. I'm currently preparing for a <strong>Management Trainee / MDP</strong> career track at a large company.",
-    "about.stat1": "Small businesses supported",
-    "about.stat2": "Organizational & professional roles",
-    "about.stat3": "IP-registered analysis report",
-    "about.cta1": "View Projects",
-    "about.cta2": "Contact Me",
+    "about.card.focusVal": "Brand strategy and market research",
+    "about.card.goal": "Career goal",
 
-    "skills.eyebrow": "Skills",
-    "skills.title": "Strategy that doesn't stay <span class=\"grad-text\">on paper.</span>",
-    "skills.lead": "Every strategy I build starts from research and a clear framework, then gets tested against business numbers before a business owner puts it to work.",
-    "skills.cta": "See it in action",
+    "skills.title": "Skills & how I work.",
+    "skills.lead": "I use Aaker and Keller to read a brand's strengths, the Ansoff Matrix to choose a direction for growth, and Break Even Point projections to test whether the plan makes business sense.",
 
-    "ansoff.x": "Product → Existing · New",
-    "ansoff.y": "Market → Existing · New",
+    "ansoff.title": "Ansoff Matrix, pick a quadrant",
+    "ansoff.exist": "Existing products",
+    "ansoff.new": "New products",
+    "ansoff.existM": "Existing markets",
+    "ansoff.newM": "New markets",
     "ansoff.q0": "Market Penetration",
     "ansoff.q1": "Product Development",
     "ansoff.q2": "Market Development",
     "ansoff.q3": "Diversification",
-    "ansoff.label": "Strategy note",
 
     "skill1.t": "Brand Strategy & Analysis",
-    "skill1.d": "Designing and analyzing brand strategy with the Aaker and Keller frameworks, and mapping business expansion with the Ansoff Matrix.",
+    "skill1.d": "Analyzing brand equity with the Aaker and Keller frameworks, then mapping business expansion with the Ansoff Matrix. Used to define Sang Bamboo's positioning.",
     "skill2.t": "Market Research",
-    "skill2.d": "Thorough market research to validate business concepts: target market analysis, demand potential, and business model opportunities.",
+    "skill2.d": "Market research to validate a startup concept for digitalizing small businesses in Pasuruan Regency: target market, demand potential, and business model opportunities.",
     "skill3.t": "End-to-End Marketing Planning",
-    "skill3.d": "Building marketing plans from strategy formulation to financial projections, pairing creative thinking with business-number validation.",
+    "skill3.d": "Building Cantuka Kreatif's marketing plan, from CRM and IMC strategy to Break Even Point projection and sales forecasting.",
     "skill4.t": "Client Advisory",
-    "skill4.d": "Advising real business owners directly on marketing strategy, not just academic simulations.",
-    "tag.target": "Target Market",
+    "skill4.d": "Marketing Advisor for Yusmida Collections since 2025, advising the owner directly on promotion and product positioning.",
+    "tag.target": "Target market",
     "tag.demand": "Demand",
-    "tag.bm": "Business Model",
+    "tag.bm": "Business model",
     "tag.promo": "Promotion",
 
     "projects.title": "Featured Projects",
     "projects.aside": "Real small-business case studies",
-    "p.featured": "Featured Project",
+    "p.featured": "Featured project",
     "case.approach": "Approach",
     "case.result": "Outcome",
 
-    "p1.kicker": "Branding · Bamboo Crafts",
+    "p1.kicker": "Branding · Bamboo crafts",
     "p1.title": "Branding for Sang Bamboo",
     "p1.desc": "A brand analysis built on the Aaker and Keller frameworks, paired with an Ansoff Matrix expansion strategy, to give this bamboo-craft brand a clearer positioning and development direction.",
     "p1.approach": "Brand equity (Aaker), CBBE (Keller), and the Ansoff Matrix for expansion direction.",
     "p1.result": "Our group's analysis was <strong>implemented directly by the business</strong>, and the report was <strong>registered as intellectual property (HAKI)</strong> by the study program.",
 
-    "p2.kicker": "Marketing Plan · Upcycled Crafts",
+    "p2.kicker": "Marketing plan · Upcycled crafts",
     "p2.title": "Marketing Plan for Cantuka Kreatif",
     "p2.desc": "A complete marketing plan for an eco-friendly craft brand made from recycled materials, from strategy formulation to business-number validation.",
     "p2.approach": "CRM analysis and Integrated Marketing Communication (IMC).",
     "p2.result": "A full marketing plan with Break Even Point projection and sales forecasting.",
 
-    "p3.kicker": "Market Research · Digital Startup",
+    "p3.kicker": "Market research · Digital startup",
     "p3.title": "Research for a Pasuruan SME Digitalization Startup",
     "p3.desc": "Market research to validate a digital startup concept aimed at digitalizing small businesses in Pasuruan Regency.",
     "p3.approach": "Target market analysis, demand potential, and business model opportunities.",
@@ -90,8 +83,8 @@
 
     "exp.title": "Experience",
     "exp.aside": "Professional & organizational",
-    "exp.p1": "2025 – Present",
-    "exp.p2": "Jan 2026 – Present",
+    "exp.p1": "2025 – present",
+    "exp.p2": "Jan 2026 – present",
     "exp.p3": "Apr 2025 – Mar 2026",
     "exp.p4": "Mar 2025 – Feb 2026",
     "exp1.d": "Advising the business owner directly on marketing strategy, helping shape the promotional approach and product positioning.",
@@ -104,7 +97,7 @@
     "exp4.org": "Business Administration Student Association",
     "exp4.d": "Organizational experience at the department association level, developing students' interests and talents.",
 
-    "cta.title": "Interested to discuss or <span class=\"grad-text\">collaborate?</span>",
+    "cta.title": "Interested to discuss or collaborate?",
     "cta.lead": "Open to Management Trainee / MDP programs, small-business branding projects, and conversations about marketing.",
     "cta.email": "Send an Email",
     "cta.copy": "Copy",
@@ -212,32 +205,16 @@
     if (s) sectionObserver.observe(s);
   });
 
-  /* ---------- Reveal on scroll ---------- */
-  const revealEls = document.querySelectorAll(".reveal");
-  const revealObserver = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (!entry.isIntersecting) return;
-      entry.target.classList.add("is-visible");
-      revealObserver.unobserve(entry.target);
-    });
-  }, { threshold: 0.12, rootMargin: "0px 0px -40px 0px" });
-
-  revealEls.forEach((el) => {
-    // stagger siblings sedikit supaya muncul berurutan
-    const siblings = [...el.parentElement.children].filter((c) => c.classList.contains("reveal"));
-    el.style.transitionDelay = Math.min(siblings.indexOf(el), 5) * 80 + "ms";
-    revealObserver.observe(el);
-  });
-
   /* ---------- Ansoff matrix ---------- */
   const cells = document.querySelectorAll(".ansoff__cell");
-  const timeline = document.querySelector(".appwin__timeline span");
   cells.forEach((cell) => {
     cell.addEventListener("click", () => {
       activeQuadrant = Number(cell.dataset.q);
-      cells.forEach((c) => c.classList.toggle("is-active", c === cell));
+      cells.forEach((c) => {
+        c.classList.toggle("is-active", c === cell);
+        c.setAttribute("aria-pressed", String(c === cell));
+      });
       ansoffNote.textContent = ANSOFF_NOTES[lang][activeQuadrant];
-      if (timeline) timeline.style.left = 4 + activeQuadrant * 22 + "%";
     });
   });
 
