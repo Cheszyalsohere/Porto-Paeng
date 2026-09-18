@@ -125,6 +125,7 @@
     "cta.copy": "Copy",
     "footer.tag": "Brand & marketing for local SMEs · Malang",
     "footer.top": "Back to top ↑",
+    "visits.label": "visits",
     "cv.title": "CV · M. Rafael Al Ghazali",
     "cv.download": "Download PDF",
     "cv.close": "Close preview",
@@ -196,6 +197,7 @@
     });
     if (ansoffNote) ansoffNote.textContent = ANSOFF_NOTES[lang][activeQuadrant];
     updateToggleLabel();
+    if (typeof renderVisits === "function") renderVisits();
 
     try { localStorage.setItem("lang", lang); } catch (e) { /* storage unavailable */ }
   }
@@ -298,6 +300,28 @@
     cvModal.addEventListener("click", (e) => { if (e.target === cvModal) closeCv(); });
     cvModal.addEventListener("close", () => document.body.classList.remove("is-locked"));
   }
+
+  /* ---------- Visit counter (api/visits.js) ---------- */
+  const visits = document.getElementById("visits");
+  let visitTotal = null;
+  function renderVisits() {
+    if (visitTotal === null) return;
+    document.getElementById("visitsNum").textContent = visitTotal.toLocaleString(lang === "en" ? "en-US" : "id-ID");
+    visits.hidden = false;
+  }
+  (async () => {
+    let counted = false;
+    try { counted = sessionStorage.getItem("visitCounted") === "1"; } catch (e) { /* storage unavailable */ }
+    try {
+      const r = await fetch("/api/visits", { method: counted ? "GET" : "POST" });
+      if (!r.ok) return;
+      const data = await r.json();
+      if (typeof data.total !== "number") return;
+      if (!counted) { try { sessionStorage.setItem("visitCounted", "1"); } catch (e) { /* storage unavailable */ } }
+      visitTotal = data.total;
+      renderVisits();
+    } catch (e) { /* counter stays hidden */ }
+  })();
 
   /* ---------- Year ---------- */
   document.getElementById("year").textContent = new Date().getFullYear();

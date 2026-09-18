@@ -35,3 +35,9 @@ Import repo ini di Vercel sebagai proyek statis. Tidak perlu build command.
 Website memakai **Vercel Web Analytics** (tanpa cookie). Script-nya sudah terpasang di `index.html` dan hanya aktif di domain Vercel.
 
 Setelah deploy: buka proyek di dashboard Vercel → tab **Analytics** → **Enable**, lalu redeploy sekali. Data pengunjung (jumlah kunjungan, halaman, negara, perangkat, sumber traffic) muncul di tab tersebut.
+
+## Penghitung kunjungan di footer
+
+`api/visits.js` adalah serverless function Vercel yang menyimpan total kunjungan di Upstash Redis. Satu browser dihitung sekali per sesi. Selama database belum tersambung, penghitung di footer disembunyikan.
+
+Cara menyambungkan: dashboard Vercel → proyek → **Storage** → **Create Database** → **Upstash for Redis** (paket Free) → sambungkan ke proyek ini → **Redeploy**. Variabel `KV_REST_API_URL` / `KV_REST_API_TOKEN` (atau `UPSTASH_REDIS_REST_URL` / `UPSTASH_REDIS_REST_TOKEN`) otomatis ditambahkan.
