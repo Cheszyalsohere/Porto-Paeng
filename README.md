@@ -41,3 +41,5 @@ Setelah deploy: buka proyek di dashboard Vercel → tab **Analytics** → **Enab
 `api/visits.js` adalah serverless function Vercel yang menyimpan total kunjungan di Upstash Redis. Satu browser dihitung sekali per sesi. Selama database belum tersambung, penghitung di footer disembunyikan.
 
 Cara menyambungkan: dashboard Vercel → proyek → **Storage** → **Create Database** → **Upstash for Redis** (paket Free) → sambungkan ke proyek ini → **Redeploy**. Variabel `KV_REST_API_URL` / `KV_REST_API_TOKEN` (atau `UPSTASH_REDIS_REST_URL` / `UPSTASH_REDIS_REST_TOKEN`) otomatis ditambahkan.
+
+Catatan: variabel environment baru hanya terbaca oleh deploy **setelah** variabel itu dibuat. Vercel tidak membuat deploy baru untuk commit kosong, jadi gunakan tombol **Redeploy** di dashboard (atau push perubahan nyata).
