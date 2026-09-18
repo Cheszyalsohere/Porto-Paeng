@@ -375,7 +375,6 @@ main { overflow-x: clip; }
   box-shadow: var(--shadow);
   margin-bottom: 24px;
 }
-.project--featured { box-shadow: 0 0 0 2px var(--blue), var(--shadow); }
 .project--compact { grid-template-columns: 1fr; }
 .project__media {
   position: relative; aspect-ratio: 1; border-radius: 12px;
