@@ -23,7 +23,7 @@
     "clients.label": "Small businesses I've worked with",
 
     "about.title": "About Me.",
-    "about.p1": "I'm a marketing student drawn to the intersection of <strong>brand strategy</strong>, <strong>market research</strong>, and <strong>digital entrepreneurship</strong>.",
+    "about.p1": "I'm a <strong>Marketing Management</strong> student drawn to the intersection of <strong>brand strategy</strong>, <strong>market research</strong>, and <strong>digital entrepreneurship</strong>.",
     "about.p2": "I apply frameworks like Aaker, Keller, and the Ansoff Matrix directly to small businesses, from brand analysis to registering the analysis report as intellectual property (HAKI). Outside class, I interned on the creative team at Vici Hub Asia and led a 60-person committee at the Polinema student executive board.",
     "about.p3": "I'm currently open to <strong>digital marketing / brand internships</strong>, and aiming for <strong>Management Trainee / MDP</strong> programs after graduation.",
     "about.card.study": "Study",
