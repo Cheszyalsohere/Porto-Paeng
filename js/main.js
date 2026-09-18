@@ -17,7 +17,7 @@
     "hero.title2": "for Local SMEs.",
     "hero.lead": "<strong>M. Rafael Al Ghazali</strong>, a D4 Marketing Management student at Politeknik Negeri Malang. I design research-driven branding and marketing strategies for small businesses (UMKM), then see them through until the owners put them to use.",
     "hero.cta1": "View Projects",
-    "hero.cv": "Download CV",
+    "hero.cv": "View CV",
     "hero.cta2": "Contact Me",
     "hero.place": "Malang, East Java",
     "clients.label": "Small businesses I've worked with",
@@ -106,7 +106,7 @@
     "exp1.b1": "Recommending marketing strategy on an ongoing basis, including promotional content planning and visual materials.",
     "exp1.b2": "Serving as a standing advisor who monitors strategy implementation and gives regular feedback.",
     "exp2.t": "Media & Creative Coach",
-    "exp2.org": "Robotics Club Extracurricular",
+    "exp2.org": "Smanba Robotic Club · Extracurricular",
     "exp2.b1": "Coaching the club's media and creative output, including visual direction and publication.",
     "exp5.b1": "Part of the creative team during the internship, supporting content production and the company's creative materials.",
     "exp3.t": "Student Resource Development Staff",
@@ -125,6 +125,10 @@
     "cta.copy": "Copy",
     "footer.tag": "Brand & marketing for local SMEs · Malang",
     "footer.top": "Back to top ↑",
+    "cv.title": "CV · M. Rafael Al Ghazali",
+    "cv.download": "Download PDF",
+    "cv.close": "Close preview",
+    "cv.alt": "Preview of M. Rafael Al Ghazali's CV",
   };
 
   const ANSOFF_NOTES = {
@@ -153,6 +157,15 @@
   textNodes.forEach((el) => { ID[el.dataset.i18n] = el.textContent.trim(); });
   htmlNodes.forEach((el) => { ID[el.dataset.i18nHtml] = el.innerHTML.trim(); });
 
+  const attrNodes = [];
+  [["data-i18n-label", "aria-label"], ["data-i18n-alt", "alt"]].forEach(([data, attr]) => {
+    document.querySelectorAll("[" + data + "]").forEach((el) => {
+      const key = el.getAttribute(data);
+      ID[key] = el.getAttribute(attr);
+      attrNodes.push([el, attr, key]);
+    });
+  });
+
   let lang = "id";
   let activeQuadrant = 0;
   const ansoffNote = document.getElementById("ansoffNote");
@@ -168,6 +181,11 @@
     htmlNodes.forEach((el) => {
       const v = dict[el.dataset.i18nHtml];
       if (v !== undefined) el.innerHTML = v;
+    });
+
+    attrNodes.forEach(([el, attr, key]) => {
+      const v = lang === "en" ? EN[key] : ID[key];
+      if (v !== undefined) el.setAttribute(attr, v);
     });
 
     document.documentElement.lang = lang;
@@ -260,6 +278,23 @@
       copyBtn.classList.remove("is-copied");
     }, 1800);
   });
+
+  /* ---------- CV preview ---------- */
+  const cvModal = document.getElementById("cvModal");
+  if (cvModal && typeof cvModal.showModal === "function") {
+    const closeCv = () => cvModal.close();
+    document.querySelectorAll(".js-cv-open").forEach((a) => {
+      a.addEventListener("click", (e) => {
+        e.preventDefault();
+        cvModal.showModal();
+        document.body.classList.add("is-locked");
+      });
+    });
+    document.getElementById("cvClose").addEventListener("click", closeCv);
+    // klik di luar kertas CV (backdrop) menutup preview
+    cvModal.addEventListener("click", (e) => { if (e.target === cvModal) closeCv(); });
+    cvModal.addEventListener("close", () => document.body.classList.remove("is-locked"));
+  }
 
   /* ---------- Year ---------- */
   document.getElementById("year").textContent = new Date().getFullYear();
