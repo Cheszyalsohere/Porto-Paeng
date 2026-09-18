@@ -17,7 +17,7 @@ Lalu buka http://localhost:5500.
 | `assets/img/paeng.jpg` | Foto utama di hero (rasio potret, wajah di bagian atas) |
 | `assets/img/logo-sang-bamboo.png` | Logo UMKM Sang Bamboo |
 | `assets/img/logo-cantuka.png` | Logo UMKM Cantuka Kreatif |
-| `assets/cv/CV-Rafael.pdf` | CV. Setelah file ada, hapus atribut `hidden` pada tombol Download CV di `index.html` |
+| `assets/cv/CV-Muhammad-Rafael-Al-Ghazali.pdf` | CV versi web (tanpa nomor HP) untuk tombol Download CV |
 
 Selama file belum ada, website menampilkan placeholder otomatis.
 
