@@ -191,12 +191,16 @@
 
   /* ---------- Nav background on scroll ---------- */
   const nav = document.querySelector(".nav");
-  const onScroll = () => nav.classList.toggle("is-scrolled", window.scrollY > 10);
+  const navAnchors = [...links.querySelectorAll('a[href^="#"]:not(.btn)')];
+  const onScroll = () => {
+    nav.classList.toggle("is-scrolled", window.scrollY > 10);
+    // di area hero belum ada section aktif
+    if (window.scrollY < window.innerHeight * 0.5) navAnchors.forEach((a) => a.classList.remove("is-current"));
+  };
   onScroll();
   window.addEventListener("scroll", onScroll, { passive: true });
 
   /* ---------- Current section in nav ---------- */
-  const navAnchors = [...links.querySelectorAll('a[href^="#"]:not(.btn)')];
   const sectionObserver = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       if (!entry.isIntersecting) return;
